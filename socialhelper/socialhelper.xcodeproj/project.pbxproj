@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		946DE07D1F4B36D700D89B6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 946DE07C1F4B36D700D89B6A /* main.m */; };
+		946DE0801F4B36D700D89B6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 946DE07F1F4B36D700D89B6A /* AppDelegate.m */; };
+		946DE0831F4B36D700D89B6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946DE0821F4B36D700D89B6A /* ViewController.m */; };
+		946DE0861F4B36D700D89B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946DE0841F4B36D700D89B6A /* Main.storyboard */; };
+		946DE0881F4B36D700D89B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946DE0871F4B36D700D89B6A /* Assets.xcassets */; };
+		946DE08B1F4B36D700D89B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946DE0891F4B36D700D89B6A /* LaunchScreen.storyboard */; };
+		946DE0971F4B371700D89B6A /* FbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 946DE0941F4B371700D89B6A /* FbHelper.m */; };
+		946DE0981F4B371700D89B6A /* GoogleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 946DE0961F4B371700D89B6A /* GoogleHelper.m */; };
+		9489AE9F1F4B48240031B0B2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9489AE9E1F4B48240031B0B2 /* Default-568h@2x.png */; };
+		9489AEA11F4B4E220031B0B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9489AEA01F4B4E220031B0B2 /* GoogleService-Info.plist */; };
+		F6EAAE9B70CC654D96EDA2CE /* libPods-socialhelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB6749D32C42E5DCD3E2EFC /* libPods-socialhelper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		946DE0781F4B36D700D89B6A /* socialhelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialhelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		946DE07C1F4B36D700D89B6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		946DE07E1F4B36D700D89B6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		946DE07F1F4B36D700D89B6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		946DE0811F4B36D700D89B6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		946DE0821F4B36D700D89B6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		946DE0851F4B36D700D89B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		946DE0871F4B36D700D89B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		946DE08A1F4B36D700D89B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		946DE08C1F4B36D700D89B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946DE0931F4B371700D89B6A /* FbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbHelper.h; sourceTree = "<group>"; };
+		946DE0941F4B371700D89B6A /* FbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbHelper.m; sourceTree = "<group>"; };
+		946DE0951F4B371700D89B6A /* GoogleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleHelper.h; sourceTree = "<group>"; };
+		946DE0961F4B371700D89B6A /* GoogleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleHelper.m; sourceTree = "<group>"; };
+		9489AE9E1F4B48240031B0B2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9489AEA01F4B4E220031B0B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA2EF3D95A32BE8EAC84F603 /* Pods-socialhelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialhelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialhelper/Pods-socialhelper.debug.xcconfig"; sourceTree = "<group>"; };
+		ADB6749D32C42E5DCD3E2EFC /* libPods-socialhelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-socialhelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1C15FD7A21C00E518FA712 /* Pods-socialhelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialhelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialhelper/Pods-socialhelper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		946DE0751F4B36D700D89B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EAAE9B70CC654D96EDA2CE /* libPods-socialhelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		946DE06F1F4B36D700D89B6A = {
+			isa = PBXGroup;
+			children = (
+				9489AE9E1F4B48240031B0B2 /* Default-568h@2x.png */,
+				946DE07A1F4B36D700D89B6A /* socialhelper */,
+				946DE0791F4B36D700D89B6A /* Products */,
+				C41D0EF2EF0DA29DF8163C3F /* Pods */,
+				99C63CA6BC476CC106F8C78D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		946DE0791F4B36D700D89B6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				946DE0781F4B36D700D89B6A /* socialhelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		946DE07A1F4B36D700D89B6A /* socialhelper */ = {
+			isa = PBXGroup;
+			children = (
+				946DE07E1F4B36D700D89B6A /* AppDelegate.h */,
+				946DE07F1F4B36D700D89B6A /* AppDelegate.m */,
+				946DE0811F4B36D700D89B6A /* ViewController.h */,
+				946DE0821F4B36D700D89B6A /* ViewController.m */,
+				9489AEA01F4B4E220031B0B2 /* GoogleService-Info.plist */,
+				946DE0841F4B36D700D89B6A /* Main.storyboard */,
+				946DE0921F4B371700D89B6A /* SocialHelper */,
+				946DE0871F4B36D700D89B6A /* Assets.xcassets */,
+				946DE0891F4B36D700D89B6A /* LaunchScreen.storyboard */,
+				946DE08C1F4B36D700D89B6A /* Info.plist */,
+				946DE07B1F4B36D700D89B6A /* Supporting Files */,
+			);
+			path = socialhelper;
+			sourceTree = "<group>";
+		};
+		946DE07B1F4B36D700D89B6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				946DE07C1F4B36D700D89B6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		946DE0921F4B371700D89B6A /* SocialHelper */ = {
+			isa = PBXGroup;
+			children = (
+				946DE0931F4B371700D89B6A /* FbHelper.h */,
+				946DE0941F4B371700D89B6A /* FbHelper.m */,
+				946DE0951F4B371700D89B6A /* GoogleHelper.h */,
+				946DE0961F4B371700D89B6A /* GoogleHelper.m */,
+			);
+			path = SocialHelper;
+			sourceTree = "<group>";
+		};
+		99C63CA6BC476CC106F8C78D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB6749D32C42E5DCD3E2EFC /* libPods-socialhelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C41D0EF2EF0DA29DF8163C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA2EF3D95A32BE8EAC84F603 /* Pods-socialhelper.debug.xcconfig */,
+				ED1C15FD7A21C00E518FA712 /* Pods-socialhelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		946DE0771F4B36D700D89B6A /* socialhelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946DE08F1F4B36D700D89B6A /* Build configuration list for PBXNativeTarget "socialhelper" */;
+			buildPhases = (
+				D03DFCBBAFA2CDA3A59833D5 /* [CP] Check Pods Manifest.lock */,
+				946DE0741F4B36D700D89B6A /* Sources */,
+				946DE0751F4B36D700D89B6A /* Frameworks */,
+				946DE0761F4B36D700D89B6A /* Resources */,
+				EAC657C8F95FC4ED769E4622 /* [CP] Embed Pods Frameworks */,
+				A7D703ADB19039D79270633B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = socialhelper;
+			productName = socialhelper;
+			productReference = 946DE0781F4B36D700D89B6A /* socialhelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		946DE0701F4B36D700D89B6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jignesh Bhensadadiya";
+				TargetAttributes = {
+					946DE0771F4B36D700D89B6A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 946DE0731F4B36D700D89B6A /* Build configuration list for PBXProject "socialhelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 946DE06F1F4B36D700D89B6A;
+			productRefGroup = 946DE0791F4B36D700D89B6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				946DE0771F4B36D700D89B6A /* socialhelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		946DE0761F4B36D700D89B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946DE08B1F4B36D700D89B6A /* LaunchScreen.storyboard in Resources */,
+				9489AE9F1F4B48240031B0B2 /* Default-568h@2x.png in Resources */,
+				9489AEA11F4B4E220031B0B2 /* GoogleService-Info.plist in Resources */,
+				946DE0881F4B36D700D89B6A /* Assets.xcassets in Resources */,
+				946DE0861F4B36D700D89B6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D703ADB19039D79270633B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialhelper/Pods-socialhelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D03DFCBBAFA2CDA3A59833D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC657C8F95FC4ED769E4622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialhelper/Pods-socialhelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		946DE0741F4B36D700D89B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946DE0981F4B371700D89B6A /* GoogleHelper.m in Sources */,
+				946DE0831F4B36D700D89B6A /* ViewController.m in Sources */,
+				946DE0971F4B371700D89B6A /* FbHelper.m in Sources */,
+				946DE0801F4B36D700D89B6A /* AppDelegate.m in Sources */,
+				946DE07D1F4B36D700D89B6A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		946DE0841F4B36D700D89B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				946DE0851F4B36D700D89B6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		946DE0891F4B36D700D89B6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				946DE08A1F4B36D700D89B6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		946DE08D1F4B36D700D89B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		946DE08E1F4B36D700D89B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		946DE0901F4B36D700D89B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2EF3D95A32BE8EAC84F603 /* Pods-socialhelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = socialhelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.socialhelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		946DE0911F4B36D700D89B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1C15FD7A21C00E518FA712 /* Pods-socialhelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = socialhelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.socialhelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		946DE0731F4B36D700D89B6A /* Build configuration list for PBXProject "socialhelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946DE08D1F4B36D700D89B6A /* Debug */,
+				946DE08E1F4B36D700D89B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		946DE08F1F4B36D700D89B6A /* Build configuration list for PBXNativeTarget "socialhelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946DE0901F4B36D700D89B6A /* Debug */,
+				946DE0911F4B36D700D89B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 946DE0701F4B36D700D89B6A /* Project object */;
+}
