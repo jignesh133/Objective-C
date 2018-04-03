@@ -1,7 +1,5 @@
 
 #import "FbHelper.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @implementation FbHelper
 
@@ -14,11 +12,21 @@
     return sharedManager;
 }
 
+
+// Authenticate the block
+
 - (void)authenticateWithBlock:(SocialBlock)block{
     socialBlock = block;
-    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+
+    login = [[FBSDKLoginManager alloc] init];
+    //ESSENTIAL LINE OF CODE BECAUSE OF 304 Error
     [login logInWithReadPermissions:@[@"public_profile",@"email",@"user_birthday"] fromViewController:nil handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-        if (!error) {
+        if (result.isCancelled) {
+            if (socialBlock) {
+                socialBlock(nil,@"");
+            }
+        }
+      else if (!error) {
             if ([FBSDKAccessToken currentAccessToken]) {
                 FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]initWithGraphPath:@"me" parameters:@{@"fields" : @"id,name,email,first_name,last_name"                                                                                                            }];
                 [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
@@ -26,37 +34,33 @@
                         if (socialBlock) {
                             socialBlock(result,nil);
                         }
+                       
+                    }
+                    else{
+                        if (socialBlock) {
+                            socialBlock(nil,error.localizedDescription);
+                        }
+                     
                     }
                 }];
+            }else{
+                if (socialBlock) {
+                    socialBlock(nil,[error localizedDescription]);
+                }
+              
             }
         }
+        else{
+            if (socialBlock) {
+                socialBlock(nil,[error localizedDescription]);
+            }
+            
+        }
     }];
+    //then logout
+    [login logOut];
 }
 
-- (UIViewController*) topMostController {
-    UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    while (topController.presentedViewController) {
-        topController = topController.presentedViewController;
-    }
-    return topController;
-}
 
-- (void)getAllMyFBPhotoWithBlock:(SocialBlock)block{
-    socialBlock = block;
-    FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
-    [loginManager logInWithReadPermissions:@[@"public_profile,email,user_friends,user_photos"                                                                                                ] fromViewController:[self topMostController] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-         [[[FBSDKGraphRequest alloc]
-           initWithGraphPath:@"me/albums"
-           parameters:nil
-           HTTPMethod:@"GET"]
-          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-              if (!error) {
-                  if (socialBlock) {
-                      socialBlock(result,nil);
-                  }
-              }
-          }];
-     }];
-}
 
 @end
